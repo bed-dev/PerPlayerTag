@@ -1,0 +1,4 @@
+name: PerPlayerTag
+version: '${project.version}'
+main: codes.bed.perplayertag.PerPlayerTag
+load: STARTUP
