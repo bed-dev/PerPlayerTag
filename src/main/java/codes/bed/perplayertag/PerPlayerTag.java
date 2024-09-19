@@ -42,13 +42,13 @@ public final class PerPlayerTag extends JavaPlugin {
                     return true;
                 }
 
-                String characterName = args[1];
+                StringBuilder characterName = new StringBuilder(args[1]);
                 for (int i = 2; i < args.length; i++) {
-                    characterName += " " + args[i];
+                    characterName.append(" ").append(args[i]);
                 }
 
                 // Show the name tag to the sender only
-                setCharacterTag(player, target, characterName);
+                setCharacterTag(player, target, characterName.toString());
                 return true;
             }
         }
